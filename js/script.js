@@ -137,11 +137,11 @@ document.querySelector('.femme').addEventListener('click', () => {
 document.querySelector('button').addEventListener('click', () => {
     if (document.querySelector('body').classList.contains('dark')) {
         document.querySelector('body').classList.remove('dark')
-        document.querySelector('h1').innerText = 'Bienvenu sur le calculateur le plus cool de l\'histoire'
+        document.querySelector('h1').innerText = 'Bienvenue sur le calculateur le plus cool de l\'histoire'
         document.querySelector('button').innerText = 'Je préfère le dark side'
     } else {
         document.querySelector('body').classList.add('dark')
-        document.querySelector('h1').innerText = 'Bienvenu sur le calculateur le plus dark de l\'histoire'
+        document.querySelector('h1').innerText = 'Bienvenue sur le calculateur le plus dark de l\'histoire'
         document.querySelector('button').innerText = 'Je préfère le white side'
     }
 })
