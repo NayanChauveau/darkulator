@@ -1,8 +1,7 @@
 
 // Calc part
 
-document.querySelector('.calcul').addEventListener('click', () => {
-
+function calcul () {
     let brut = parseInt(document.querySelector('#salaire').value)
     let assurance = brut * 0.07
     let corse = brut * 0.05
@@ -76,7 +75,15 @@ document.querySelector('.calcul').addEventListener('click', () => {
         document.querySelector('.response').innerHTML = coolPhrase[Math.floor(Math.random() * coolPhrase.length)]
     }
     
-})
+}
+
+document.querySelector('.calcul').addEventListener('click', calcul, false)
+document.querySelector('.brut').addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        calcul()
+    }
+}, false)
+
 
 // End of the calc part
 
