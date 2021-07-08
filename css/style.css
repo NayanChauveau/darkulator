@@ -325,4 +325,8 @@ body.dark {
     h1 {
         font-size: 30px;
     }
+
+    .mob-bottom {
+        padding: 0 10px;
+    }
 }
