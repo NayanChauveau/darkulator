@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Darkulator</title>
+</head>
+<body>
+    <div class="left-side">
+        <h1>Bienvenu sur le calculateur le plus cool de l'histoire</h1>
+        <button>Je préfère le dark side</button>
+    </div>
+    <div class="mob-bottom">
+        <div class="right-side">
+            <form action="">
+                <input class="brut" type="text" name="salaire" id="salaire" placeholder="Entrez votre salaire brut"><br>
+                <div class="impt-ass-corse box-choice">
+                    <div class="impots checked">Impots</div>
+                    <div class="assur">Assurance employé</div>
+                    <div class="corse">Pensions de corse</div>
+                </div>
+                <div class="check-hidden">
+                    <input class="decompte" type="checkbox" name="impots" id="impots" checked>
+                    <input class="decompte" type="checkbox" name="assur" id="assur">
+                    <input class="decompte" type="checkbox" name="corse" id="corse">
+                </div>
+                <select name="suppl" id="suppl">
+                    <option value="choisir">Vous percevez un supplement ?</option>
+                    <option value="bonus">Bonus de 100€</option>
+                    <option value="allocation">Allocation de 150€</option>
+                </select><br>
+                <div class="femme-homme box-choice">
+                    <div class="femme">Femme</div>
+                    <div class="homme">Homme</div>
+                </div>
+                <div class="radio-hidden">
+                    <input type="radio" name="h-f" id="homme">
+                    <input type="radio" name="h-f" id="femme">
+                </div>
+                <select name="char" id="char">
+                    <option value="txt">Nombre de personnes à charge</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4+">4+</option>
+                </select><br>
+                <input class="calcul" type="button" value="Calculez !">
+            </form>
+            <div class="response">Lol</div>
+    </div>
+    </div>
+    <script src="js/script.js"> </script>
+</body>
+</html>
