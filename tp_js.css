@@ -192,6 +192,7 @@ input.calcul:hover {
     z-index: -1;
 }
 
+
 /* Dark */
 
 body.dark {
@@ -264,6 +265,21 @@ body.dark {
 .dark .response {
     border: 1px solid #282e43;
     color: #d9def3;
+}
+
+.dark input:-internal-autofill-previewed,
+.dark input:-internal-autofill-previewed:hover, 
+.dark input:-internal-autofill-previewed:focus, 
+.dark input:-internal-autofill-previewed:active,
+.dark input:-internal-autofill-selected,
+.dark input:-internal-autofill-selected:hover, 
+.dark input:-internal-autofill-selected:focus, 
+.dark input:-internal-autofill-selected:active,
+.dark input:-webkit-autofill::first-line  {
+    box-shadow: 0 0 0 30px #0d0f16 inset;
+    -webkit-box-shadow: 0 0 0 30px #0d0f16 inset;
+    -webkit-text-fill-color: #d9def3;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Responsive design */
