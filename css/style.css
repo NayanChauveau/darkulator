@@ -192,6 +192,9 @@ button {
   border-right: 1px solid #839ebb;
   transition: color 0.2s;
 }
+.dark .box-choice button.checked:last-child {
+  border-right: none;
+}
 .dark .box-choice {
   border: 1px solid #282e43;
 }
