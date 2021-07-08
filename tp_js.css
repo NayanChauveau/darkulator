@@ -266,3 +266,31 @@ body.dark {
     color: #d9def3;
 }
 
+/* Responsive design */
+
+@media screen and (max-width: 980px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        height: 100vh;
+    }
+
+    .left-side {
+        padding: 5% 5%;
+    }
+
+    .left-side button {
+        margin-top: 25px;
+    }
+
+    .mob-bottom {
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    h1 {
+        font-size: 30px;
+    }
+}
