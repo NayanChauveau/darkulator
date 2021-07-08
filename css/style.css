@@ -70,11 +70,11 @@ h1 {
     color: rgb(245, 245, 245);
     border-radius: 5px;
     align-self: center;
-    transition: .2s;
 }
 
 .left-side button:hover {
     background-color: #732bcc;
+    transition: .2s;
 }
 
 .left-side {
@@ -123,19 +123,22 @@ h1 {
     text-align: center;
     border-right: 1px solid lightgrey;
     padding: 10px 15px;
-    transition: color .2s;
+}
+
+.box-choice button.prechecked {
+    background: #8f46e8;
+    color: rgb(245, 245, 245);
+    border-right: 1px solid #949cb4;
 }
 
 .box-choice button.checked {
     background: #8f46e8;
     color: rgb(245, 245, 245);
     border-right: 1px solid #949cb4;
-    transition: background .2s;
+    transition: color .2s;
+    transition:background-color .2s;
 }
 
-.box-choice button:hover {
-    cursor: pointer;
-}
 
 .box-choice button:first-child {
     border-radius: 4px 0 0 4px;
@@ -167,11 +170,11 @@ input.calcul {
     border-radius: 5px;
     cursor: pointer;
     margin-bottom: 15px;
-    transition: .2s;
 }
 
 input.calcul:hover {
     background-color: #995ae6;
+    transition: .2s;
 }
 
 .response {
@@ -239,7 +242,12 @@ body.dark {
 .dark .box-choice button {
     border-right: 1px solid #282e43;
     color: #d9def3;
-    transition: color .2s;
+}
+
+.dark .box-choice button.prechecked {
+    background: #9abadd;
+    color: rgb(13 15 22);
+    border-right: 1px solid #949cb4;
 }
 
 
@@ -247,6 +255,11 @@ body.dark {
     background-color: #9abadd;
     color: rgb(13 15 22);
     border-right: 1px solid #839ebb;
+    transition: color .2s;
+}
+
+.dark .box-choice button:last-child {
+    border-right: none;
 }
 
 .dark select {

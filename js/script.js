@@ -103,8 +103,9 @@ checkWithADiv('.corse', '#corse')
 let addClassChecked = function (divquery) {
     let theDiv = document.querySelector(divquery)
     theDiv.addEventListener('click', () => {
-        if (theDiv.classList.contains('checked')) {
+        if (theDiv.classList.contains('checked') || theDiv.classList.contains('prechecked')) {
             theDiv.classList.remove('checked')
+            theDiv.classList.remove('prechecked')
         } else {
             theDiv.classList.add('checked')
         }
